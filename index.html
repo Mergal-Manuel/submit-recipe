@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Recipe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: #fff8e1;
+            color: #5a4a29;
+        }
+
+        .navbar {
+            background-color: #ff8c42;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffd700;
+        }
+
+        h1 {
+            color: #ff8c42;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #5a4a29;
+        }
+
+        .card-title {
+            color: #ff8c42;
+        }
+
+        .card-text {
+            color: #5a4a29;
+        }
+
+        .form-container {
+            margin-top: 50px;
+        }
+
+        .form-group textarea {
+            width: 100%;
+            height: 150px;
+        }
+
+        .submit-btn {
+            background-color: #ff8c42;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #ffd700;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mergal's Kawali</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Submit Recipe</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search recipes" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container form-container">
+        <div class="text-center">
+            <h1>Submit Your Recipe</h1>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-8 offset-md-2">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipeTitle" class="form-label">Recipe Title</label>
+                                <input type="text" class="form-control" id="recipeTitle" placeholder="Enter Recipe Title">
+                            </div>
+                            <div class="mb-3">
+                                <label for="ingredients" class="form-label">Ingredients</label>
+                                <textarea class="form-control" id="ingredients" rows="5" placeholder="Enter ingredients here"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipe" class="form-label">Recipe Instructions</label>
+                                <textarea class="form-control" id="recipe" rows="5" placeholder="Enter recipe instructions here"></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit Recipe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
